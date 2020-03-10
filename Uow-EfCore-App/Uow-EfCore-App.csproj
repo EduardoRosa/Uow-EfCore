@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>Uow_EfCore_App</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Uow-EfCore-DOMAIN\Uow-EfCore-Domain.csproj" />
+    <ProjectReference Include="..\Uow-EfCore-IRepository\Uow-EfCore-IRepository.csproj" />
+  </ItemGroup>
+
+</Project>

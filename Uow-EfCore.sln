@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{415A058D-F002-47D4-96DB-295854C40F2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{0F343896-D2D4-405C-8124-F8D6DAE9E4E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{12C276F3-3A9A-463A-BA8D-1BF2186B3109}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{1BED7FFF-06BC-40A6-BF6B-03EE182A8011}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uow-EfCore-Api", "Uow-EfCore-API\Uow-EfCore-Api.csproj", "{A23DACB4-BFF1-4B63-AFC5-0B492743BFF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uow-EfCore-App", "Uow-EfCore-APP\Uow-EfCore-App.csproj", "{046BD8F2-DFB5-49EA-B13E-2F332A8D0416}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uow-EfCore-Domain", "Uow-EfCore-DOMAIN\Uow-EfCore-Domain.csproj", "{8C2D52C5-8F0B-44A8-B74C-0ED33B1EDA80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uow-EfCore-Repository", "Uow-EfCore-Repository\Uow-EfCore-Repository.csproj", "{B638A7F4-68EE-4E87-B38C-5AFB4C486DF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uow-EfCore-IRepository", "Uow-EfCore-IRepository\Uow-EfCore-IRepository.csproj", "{A6975DBF-4256-4C76-B605-90D95B168060}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uow-EfCore-Mapping", "Uow-EfCore-Mapping\Uow-EfCore-Mapping.csproj", "{889F3277-5290-4C31-B12B-11E2F8FF4AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A23DACB4-BFF1-4B63-AFC5-0B492743BFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23DACB4-BFF1-4B63-AFC5-0B492743BFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23DACB4-BFF1-4B63-AFC5-0B492743BFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23DACB4-BFF1-4B63-AFC5-0B492743BFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046BD8F2-DFB5-49EA-B13E-2F332A8D0416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046BD8F2-DFB5-49EA-B13E-2F332A8D0416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046BD8F2-DFB5-49EA-B13E-2F332A8D0416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046BD8F2-DFB5-49EA-B13E-2F332A8D0416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2D52C5-8F0B-44A8-B74C-0ED33B1EDA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2D52C5-8F0B-44A8-B74C-0ED33B1EDA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2D52C5-8F0B-44A8-B74C-0ED33B1EDA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2D52C5-8F0B-44A8-B74C-0ED33B1EDA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B638A7F4-68EE-4E87-B38C-5AFB4C486DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B638A7F4-68EE-4E87-B38C-5AFB4C486DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B638A7F4-68EE-4E87-B38C-5AFB4C486DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B638A7F4-68EE-4E87-B38C-5AFB4C486DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6975DBF-4256-4C76-B605-90D95B168060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6975DBF-4256-4C76-B605-90D95B168060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6975DBF-4256-4C76-B605-90D95B168060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6975DBF-4256-4C76-B605-90D95B168060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{889F3277-5290-4C31-B12B-11E2F8FF4AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889F3277-5290-4C31-B12B-11E2F8FF4AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889F3277-5290-4C31-B12B-11E2F8FF4AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889F3277-5290-4C31-B12B-11E2F8FF4AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A23DACB4-BFF1-4B63-AFC5-0B492743BFF9} = {415A058D-F002-47D4-96DB-295854C40F2D}
+		{046BD8F2-DFB5-49EA-B13E-2F332A8D0416} = {0F343896-D2D4-405C-8124-F8D6DAE9E4E8}
+		{8C2D52C5-8F0B-44A8-B74C-0ED33B1EDA80} = {12C276F3-3A9A-463A-BA8D-1BF2186B3109}
+		{B638A7F4-68EE-4E87-B38C-5AFB4C486DF9} = {1BED7FFF-06BC-40A6-BF6B-03EE182A8011}
+		{A6975DBF-4256-4C76-B605-90D95B168060} = {1BED7FFF-06BC-40A6-BF6B-03EE182A8011}
+		{889F3277-5290-4C31-B12B-11E2F8FF4AD3} = {1BED7FFF-06BC-40A6-BF6B-03EE182A8011}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA9D6087-70BC-4AAA-8356-B313582EA2CB}
+	EndGlobalSection
+EndGlobal
