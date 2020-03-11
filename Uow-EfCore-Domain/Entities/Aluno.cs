@@ -3,22 +3,28 @@ using System.Collections.Generic;
 using System.Text;
 using Uow_EfCore_Domain;
 using Uow_EfCore_Domain.Entities;
+using Uow_EfCore_Domain.ValueObjects;
 
 namespace Uow_EfCore_DOMAIN.Entities
 {
     public class Aluno : BaseEntity
     {
-        public Aluno(string nome, string sobrenome, string responsavel, DateTime DataEntrada, DateTime? DataSaida,  string cpfResponsavel,Endereco endereco)
+        public Aluno(Pessoa pessoa, string responsavel, Contratacao contratacao, Endereco endereco)
         {
+            if (string.IsNullOrEmpty(responsavel))
+                throw new ArgumentException("Nome de Responsável é necessário para efetuar mátricula.");
+
+            Pessoa = pessoa;
+            Responsavel = responsavel;
+            Contratacao = contratacao;
+            Endereco = endereco;
 
         }
 
-        public string Nome { get; set; }
-        public string Sobrenome { get; set; }
-        public string Responsavel { get; set; }
-        public DateTime DataEntrada { get; set; }
-        public DateTime? DataSaida { get; set; }
-        public string CpfResponsavel { get; set; }
-        public Endereco Endereco { get; set; }
+        public Pessoa Pessoa { get; private set; }
+        public Contratacao Contratacao { get; private set; }
+        public Endereco Endereco { get; private set; }
+        public string Responsavel { get; private set; }
+
     }
 }

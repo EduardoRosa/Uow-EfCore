@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Uow_EfCore_Domain
 {
-    public abstract class BaseEntity
+    public abstract class BaseEntity : Notificacoes
     {
-        public int Id { get; set; }
-        public bool Ativo { get; set; }
+        public int Id { get; private set; }
+        public bool Ativo { get; private set; }        
     }
 }

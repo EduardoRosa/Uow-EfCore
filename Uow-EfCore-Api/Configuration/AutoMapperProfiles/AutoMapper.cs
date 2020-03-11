@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Uow_EfCore_Domain.Dto;
+using Uow_EfCore_Domain.Entities;
 
 namespace Uow_EfCore_Api.Configuration.AutoMapperProfiles
 {
@@ -13,7 +15,8 @@ namespace Uow_EfCore_Api.Configuration.AutoMapperProfiles
         {
             var mapping = new MapperConfiguration(config =>
             {
-                //config.CreateMap<>();
+                config.CreateMap<Professor,ProfessorDto>();
+                config.CreateMap<ProfessorDto,Professor>();
             });
             IMapper mapper = mapping.CreateMapper();
             service.AddSingleton(mapper);

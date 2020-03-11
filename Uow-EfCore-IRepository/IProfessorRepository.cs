@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 using Uow_EfCore_Domain.Dto;
 using Uow_EfCore_Domain.Entities;
 
-namespace Uow_EfCore_App.Interface
+namespace Uow_EfCore_IRepository
 {
-    public interface IProfessorService
+    public interface IProfessorRepository : IRepository<Professor>
     {
-        Task<ProfessorDto> Create(ProfessorDto dto);
     }
 }
