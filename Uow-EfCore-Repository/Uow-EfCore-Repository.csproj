@@ -6,7 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Uow-EfCore-IRepository\Uow-EfCore-IRepository.csproj" />
+    <ProjectReference Include="..\Uow-EfCore-Mapping\Uow-EfCore-Mapping.csproj" />
   </ItemGroup>
 
   <ItemGroup>

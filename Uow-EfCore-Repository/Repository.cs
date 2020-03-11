@@ -10,10 +10,10 @@ namespace Uow_EfCore_Repository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected readonly DbContext Context;
+        protected readonly DataContext Context;
         private readonly DbSet<TEntity> DbSet;
 
-        public Repository(DbContext context)
+        public Repository(DataContext context)
         {
             Context = context;
             DbSet = context.Set<TEntity>();

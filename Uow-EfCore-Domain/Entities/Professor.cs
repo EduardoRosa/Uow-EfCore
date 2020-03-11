@@ -18,8 +18,8 @@ namespace Uow_EfCore_Domain.Entities
         }
         public Pessoa Pessoa { get; private set; }
         public Contratacao Contratacao { get; private set; }
-        public Endereco Endereco { get; set; }
-        public DadosBancarios DadosBancarios { get; set; }
+        public Endereco Endereco { get; private set; }
+        public DadosBancarios DadosBancarios { get; private set; }
 
 
     }

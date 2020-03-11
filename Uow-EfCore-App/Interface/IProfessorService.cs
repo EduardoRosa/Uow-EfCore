@@ -7,8 +7,7 @@ using Uow_EfCore_Domain.Entities;
 
 namespace Uow_EfCore_App.Interface
 {
-    public interface IProfessorService
+    public interface IProfessorService : IService<Professor,ProfessorDto>
     {
-        Task<ProfessorDto> Create(ProfessorDto dto);
     }
 }

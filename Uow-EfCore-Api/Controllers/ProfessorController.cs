@@ -20,12 +20,12 @@ namespace Uow_EfCore_API.Controllers
         {
             Professor = _professor;
         }
-        [HttpPost("Create")]
-        public async Task<ActionResult<ProfessorDto>> Insert([FromBody] ProfessorDto dto)
+        [HttpGet("Create")]
+        public async Task<ActionResult<ProfessorDto>> Insert()
         {
             try
             {
-                
+                var dto = new ProfessorDto();
                 return Ok(await Professor.Create(dto));
             }
             catch (Exception ex)

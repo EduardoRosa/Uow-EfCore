@@ -18,9 +18,12 @@ namespace Uow_EfCore_API.Configuration.NativeInjectServices
 
             service.AddScoped<IProfessorService, ProfessorService>();
 
+
             //Repositories
 
-            //service.AddScoped<IProfessorRepository, ProfessorRepository>();
+            service.AddScoped<IProfessorRepository, ProfessorRepository>();
+
+            service.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }
 }

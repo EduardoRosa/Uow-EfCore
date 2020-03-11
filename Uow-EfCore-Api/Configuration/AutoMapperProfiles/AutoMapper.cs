@@ -9,7 +9,7 @@ using Uow_EfCore_Domain.Entities;
 
 namespace Uow_EfCore_Api.Configuration.AutoMapperProfiles
 {
-    public class AutoMapper
+    public class AutoMapper : Profile
     {
         public AutoMapper(IServiceCollection service)
         {

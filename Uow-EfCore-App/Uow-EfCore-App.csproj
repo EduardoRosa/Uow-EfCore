@@ -6,8 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Uow-EfCore-DOMAIN\Uow-EfCore-Domain.csproj" />
     <ProjectReference Include="..\Uow-EfCore-IRepository\Uow-EfCore-IRepository.csproj" />
+    <ProjectReference Include="..\Uow-EfCore-Repository\Uow-EfCore-Repository.csproj" />
   </ItemGroup>
 
 </Project>

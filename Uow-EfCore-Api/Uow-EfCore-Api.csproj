@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Uow-EfCore-APP\Uow-EfCore-App.csproj" />
     <ProjectReference Include="..\Uow-EfCore-DOMAIN\Uow-EfCore-Domain.csproj" />
+    <ProjectReference Include="..\Uow-EfCore-Repository\Uow-EfCore-Repository.csproj" />
   </ItemGroup>
 
 </Project>
